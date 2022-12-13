@@ -194,7 +194,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4422917792186481176, guid: b8cb9684f4e0f6441ba27f5a68259ca0, type: 3}
+  m_Sprite: {fileID: 4432793351920879750, guid: 6e17c2dc7e3414f46b4c70bdc4a847bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -276,7 +276,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4422917792186481176, guid: b8cb9684f4e0f6441ba27f5a68259ca0, type: 3}
+  m_Sprite: {fileID: 4432793351920879750, guid: 6e17c2dc7e3414f46b4c70bdc4a847bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 669881043}
   - component: {fileID: 669881042}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: HealthScript
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,8 +319,8 @@ MonoBehaviour:
   health: 3
   numOfHearts: 3
   hearts: []
-  fullHeart: {fileID: 4422917792186481176, guid: b8cb9684f4e0f6441ba27f5a68259ca0, type: 3}
-  emptyHeart: {fileID: 1658512071324542559, guid: b8cb9684f4e0f6441ba27f5a68259ca0, type: 3}
+  fullHeart: {fileID: 4432793351920879750, guid: 6e17c2dc7e3414f46b4c70bdc4a847bf, type: 3}
+  emptyHeart: {fileID: 5642012044021194823, guid: 6e17c2dc7e3414f46b4c70bdc4a847bf, type: 3}
 --- !u!4 &669881043
 Transform:
   m_ObjectHideFlags: 0
@@ -472,7 +472,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4422917792186481176, guid: b8cb9684f4e0f6441ba27f5a68259ca0, type: 3}
+  m_Sprite: {fileID: 4432793351920879750, guid: 6e17c2dc7e3414f46b4c70bdc4a847bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
