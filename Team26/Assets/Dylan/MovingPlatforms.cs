@@ -19,7 +19,7 @@ public class MovingPlatforms : MonoBehaviour
         patrolPoints = patrolPts.ToArray();
         nPoints = patrolPoints.Length;
 
-        turnTowardsTarget();
+      //  turnTowardsTarget();
 
     }
 
@@ -37,7 +37,7 @@ public class MovingPlatforms : MonoBehaviour
 
 
 
-            turnTowardsTarget();
+          //  turnTowardsTarget();
 
         }
         transform.position = Vector3.Lerp(patrolPoints[patrolPath].position, patrolPoints[(patrolPath + 1) % nPoints].position, currentTime / pathTime);

@@ -24,7 +24,7 @@ public class BasicMovement : MonoBehaviour
         //Horizontal Movement
         float horizvalue = Input.GetAxis("Horizontal");
 
-        rb2.velocity = new Vector2(horizvalue * 2, rb2.velocity.y);
+        rb2.velocity = new Vector2(horizvalue * 4, rb2.velocity.y);
 
         //Jumping
         grounded = Physics2D.BoxCast(transform.position, new Vector2(0.1f, 0.1f), 0, Vector2.down, 1, LayerMask.GetMask("Ground"));
