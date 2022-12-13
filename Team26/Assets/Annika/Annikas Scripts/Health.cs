@@ -14,24 +14,24 @@ public class Health : MonoBehaviour
 
     void Update()
     {
-        for(int i = 0; i < 3; i++)
+        for (int i = 0; i < hearts.Length; i++)
         {
-            if(i < health)
+            if( i < health)
             {
                 hearts[i].sprite = fullHeart;
-            }
-            else
+            } else
             {
                 hearts[i].sprite = emptyHeart;
             }
-            if (i < numOfHearts)
+
+            if(i < numOfHearts)
             {
                 hearts[i].enabled = true;
-            }
-            else
+            } else
             {
                 hearts[i].enabled = false;
             }
+
         }
     }
 
