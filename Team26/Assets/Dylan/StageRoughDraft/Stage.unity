@@ -730,7 +730,7 @@ MonoBehaviour:
   - {fileID: 962718286}
   - {fileID: 1240367466}
   patrolPath: 0
-  pathTime: 10
+  pathTime: 1
   currentTime: 0
 --- !u!212 &1213331010
 SpriteRenderer:
@@ -791,7 +791,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213331008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.410937, y: -4.13, z: 0}
+  m_LocalPosition: {x: 2.600937, y: -4.024769, z: 0}
   m_LocalScale: {x: 2.5233936, y: 0.42877814, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1311,7 +1311,7 @@ MonoBehaviour:
   - {fileID: 796275927}
   - {fileID: 1380732855}
   patrolPath: 0
-  pathTime: 10
+  pathTime: 1
   currentTime: 0
 --- !u!212 &2098818242
 SpriteRenderer:
@@ -1372,7 +1372,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098818238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.190937, y: 0.77, z: 0}
+  m_LocalPosition: {x: 8.37111, y: 0.7373345, z: 0}
   m_LocalScale: {x: 2.5233936, y: 0.42877814, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
