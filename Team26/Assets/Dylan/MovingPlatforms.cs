@@ -55,4 +55,14 @@ public class MovingPlatforms : MonoBehaviour
         Debug.Log("------");
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        collision.transform.SetParent(transform);
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        collision.transform.SetParent(null);
+    }
 }

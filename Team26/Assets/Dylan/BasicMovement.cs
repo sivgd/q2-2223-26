@@ -31,7 +31,8 @@ public class BasicMovement : MonoBehaviour
 
         if (grounded && Input.GetKeyDown(KeyCode.Space))
         {
-            rb2.velocity = new Vector2(rb2.velocity.x, 6);
+            rb2.velocity = new Vector2(rb2.velocity.x,8);
         }
+
     }
 }
