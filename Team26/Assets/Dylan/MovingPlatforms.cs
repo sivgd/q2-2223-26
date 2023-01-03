@@ -14,7 +14,7 @@ public class MovingPlatforms : MonoBehaviour
 
     void Start()
     {
-        patrolPath = Random.Range(0, patrolPts.Count);
+       
         Debug.Log(patrolPath);
         patrolPoints = patrolPts.ToArray();
         nPoints = patrolPoints.Length;
