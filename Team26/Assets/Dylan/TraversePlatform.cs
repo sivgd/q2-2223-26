@@ -25,9 +25,13 @@ public class TraversePlatform : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+  
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
+        collision.transform.SetParent(transform);
+
         currentTime += Time.deltaTime;
         if (currentTime > pathTime)
         {
@@ -47,10 +51,8 @@ public class TraversePlatform : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        collision.transform.SetParent(transform);
-    }
+
+
 
     private void OnCollisionExit2D(Collision2D collision)
     {
