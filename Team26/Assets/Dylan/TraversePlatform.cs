@@ -39,7 +39,7 @@ public class TraversePlatform : MonoBehaviour
 
             currentTime = 0; //reset the timer
             patrolPath++;
-            if (patrolPath > nPoints - 1) patrolPath = 0;
+            
 
 
 
