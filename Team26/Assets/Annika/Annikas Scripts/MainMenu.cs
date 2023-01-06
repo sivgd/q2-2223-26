@@ -8,25 +8,25 @@ public class MainMenu : MonoBehaviour
     
     public void PlayGame()
     {
-        // loads scene
-        //SceneManager.LoadScene("UITesting");
+        SceneManager.LoadScene(1);
 
         // this line loads next scene in order of build :D
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    public void OpenCredits()
-    {
-        SceneManager.LoadScene("CreditsMenu");
-    }
-
-    public void CloseCredits()
-    {
-        SceneManager.LoadScene("MainMenu");
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void QuitGame()
     {
         Application.Quit();
     }
+
+    public void OpenCredits()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void CloseCredits()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 }

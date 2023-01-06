@@ -5,10 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Annika/Annikas Scenes/TitleScreen.unity
     guid: 6385baaa98cb64046a459deba4f6764f
+  - enabled: 1
+    path: Assets/Annika/Annikas Scenes/UITesting.unity
+    guid: 6fa450836767ba84c8534a0b5e2a412f
+  - enabled: 1
+    path: Assets/Annika/Annikas Scenes/CreditScreen.unity
+    guid: 4898703fe4a09f3498de0d2c23c1129e
   m_configObjects: {}
