@@ -11,27 +11,21 @@ public class TraversePlatform : MonoBehaviour
     public float pathTime;
     public float currentTime;
     int nPoints;
-    public GameObject player;
 
     void Start()
     {
-       
+
         Debug.Log(patrolPath);
         patrolPoints = patrolPts.ToArray();
         nPoints = patrolPoints.Length;
-
 
         //  turnTowardsTarget();
 
     }
 
-  
-
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    // Update is called once per frame
+    void Update()
     {
-        collision.transform.SetParent(transform);
-
         currentTime += Time.deltaTime;
         if (currentTime > pathTime)
         {
@@ -39,7 +33,7 @@ public class TraversePlatform : MonoBehaviour
 
             currentTime = 0; //reset the timer
             patrolPath++;
-            
+            if (patrolPath > nPoints - 1) patrolPath = 0;
 
 
 
@@ -50,12 +44,26 @@ public class TraversePlatform : MonoBehaviour
 
     }
 
+    public void turnTowardsTarget()
+    {
 
+        Vector2 startLocation = patrolPoints[patrolPath % nPoints].position;
+        Vector2 endLocation = patrolPoints[(patrolPath + 1) % nPoints].position;
+        Vector2 pathDirection = endLocation - startLocation;
+        float angle = Mathf.Atan2(pathDirection.y, pathDirection.x) * Mathf.Rad2Deg;
+        Debug.Log(pathDirection + " " + angle);
+        Debug.Log("------");
+        transform.rotation = Quaternion.Euler(0, 0, angle);
+    }
 
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        collision.transform.SetParent(transform);
+    }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         collision.transform.SetParent(null);
     }
 }
+
