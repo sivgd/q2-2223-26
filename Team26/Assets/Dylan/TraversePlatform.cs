@@ -27,7 +27,7 @@ public class TraversePlatform : MonoBehaviour
     void Update()
     {
         currentTime += Time.deltaTime;
-        if (currentTime > pathTime)
+       if (currentTime > pathTime)
         {
 
 
@@ -40,30 +40,27 @@ public class TraversePlatform : MonoBehaviour
             //  turnTowardsTarget();
 
         }
-        transform.position = Vector3.Lerp(patrolPoints[patrolPath].position, patrolPoints[(patrolPath + 1) % nPoints].position, currentTime / pathTime);
-
     }
 
-    public void turnTowardsTarget()
-    {
-
-        Vector2 startLocation = patrolPoints[patrolPath % nPoints].position;
-        Vector2 endLocation = patrolPoints[(patrolPath + 1) % nPoints].position;
-        Vector2 pathDirection = endLocation - startLocation;
-        float angle = Mathf.Atan2(pathDirection.y, pathDirection.x) * Mathf.Rad2Deg;
-        Debug.Log(pathDirection + " " + angle);
-        Debug.Log("------");
-        transform.rotation = Quaternion.Euler(0, 0, angle);
-    }
-
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         collision.transform.SetParent(transform);
+
+        traverse();
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         collision.transform.SetParent(null);
+    }
+
+    private void traverse()
+    {
+        
+ 
+        transform.position = Vector3.Lerp(patrolPoints[patrolPath].position, patrolPoints[(patrolPath + 1) % nPoints].position, currentTime / pathTime);
     }
 }
 
