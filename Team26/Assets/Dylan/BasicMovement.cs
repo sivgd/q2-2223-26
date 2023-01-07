@@ -6,14 +6,20 @@ public class BasicMovement : MonoBehaviour
 {
     bool grounded = false;
 
-    //references
-    Rigidbody2D rb2;
+    private float moveSpeed;
+    private float moveHorizontal;
 
+    //references
+    
+    private Rigidbody2D rb2;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2 = gameObject.GetComponent<Rigidbody2D>();
+
+        moveSpeed = 3f;
+
         
     }
 
@@ -26,6 +32,10 @@ public class BasicMovement : MonoBehaviour
 
         rb2.velocity = new Vector2(horizvalue * 5, rb2.velocity.y);
 
+       
+
+
+
         //Jumping
         grounded = Physics2D.BoxCast(transform.position, new Vector2(0.1f, 0.1f), 0, Vector2.down, 1, LayerMask.GetMask("Ground"));
 
@@ -35,4 +45,6 @@ public class BasicMovement : MonoBehaviour
         }
 
     }
+
+  
 }
