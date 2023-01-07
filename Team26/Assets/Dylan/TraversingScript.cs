@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class TraversingScript : MonoBehaviour
 {
-
+    Animator anim;
 
     void Start()
     {
-     
+        anim = GetComponent<Animator>();
        
     }
 
@@ -16,7 +16,7 @@ public class TraversingScript : MonoBehaviour
     {
         collision.transform.SetParent(transform);
 
-
+        anim.SetTrigger("go");
 
     }
 
