@@ -18,7 +18,7 @@ public class BasicMovement : MonoBehaviour
     {
         rb2 = gameObject.GetComponent<Rigidbody2D>();
 
-        moveSpeed = 3f;
+        moveSpeed = 7f;
 
         
     }
@@ -30,7 +30,7 @@ public class BasicMovement : MonoBehaviour
         //Horizontal Movement
         float horizvalue = Input.GetAxis("Horizontal");
 
-        rb2.velocity = new Vector2(horizvalue * 5, rb2.velocity.y);
+        rb2.velocity = new Vector2(horizvalue * 7, rb2.velocity.y);
 
        
 
