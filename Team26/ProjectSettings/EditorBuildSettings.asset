@@ -9,12 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Annika/Annikas Scenes/TitleScreen.unity
-    guid: 6385baaa98cb64046a459deba4f6764f
+    path: Assets/Annika/Annikas Scenes/TitleScene.unity
+    guid: 259e7d5f204654842b637a3ceaa3e74c
   - enabled: 1
+    path: Assets/Annika/Annikas Scenes/Level1.unity
+    guid: 2c2f5e7958b56954a920b4868e80b74a
+  - enabled: 1
+    path: Assets/Annika/Annikas Scenes/CreditsScene.unity
+    guid: e17954b1850aba049a6acc04812b9234
+  - enabled: 0
     path: Assets/Annika/Annikas Scenes/UITesting.unity
     guid: 6fa450836767ba84c8534a0b5e2a412f
-  - enabled: 1
-    path: Assets/Annika/Annikas Scenes/CreditScreen.unity
-    guid: 4898703fe4a09f3498de0d2c23c1129e
+  - enabled: 0
+    path: Assets/Annika/Annikas Scenes/OLDTitleScreen.unity
+    guid: 6385baaa98cb64046a459deba4f6764f
   m_configObjects: {}
