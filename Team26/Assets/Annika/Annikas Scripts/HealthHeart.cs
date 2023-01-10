@@ -40,7 +40,8 @@ public class HealthHeart : MonoBehaviour
         //looks at amount of hearts
         for(int i = 0; i < hearts.Count; i++)
         {
-            //grabs the heart status (reference heartcontroller script where full heart = 1 and empty = 0)
+            //grabs the heart status (references heartcontroller script where full heart = 1 and empty = 0)
+            //WHY ARENT YOU DOINF YOUR JOB
             int heartStatus = (int)Mathf.Clamp(playerHealth.currentHealth, 0, 1);
             hearts[i].SetHeartImage((HeartStatus)heartStatus);
 

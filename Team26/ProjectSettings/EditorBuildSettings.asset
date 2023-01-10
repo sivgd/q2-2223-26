@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Annika/Annikas Scenes/Level1.unity
     guid: 2c2f5e7958b56954a920b4868e80b74a
   - enabled: 1
-    path: Assets/Annika/Annikas Scenes/CreditsScene.unity
+    path: Assets/Annika/Annikas Scenes/CreditScenes.unity
     guid: e17954b1850aba049a6acc04812b9234
   - enabled: 0
     path: Assets/Annika/Annikas Scenes/UITesting.unity
