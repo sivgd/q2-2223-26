@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Annika/Annikas Scenes/Level1.unity
     guid: 2c2f5e7958b56954a920b4868e80b74a
   - enabled: 1
-    path: Assets/Annika/Annikas Scenes/CreditScenes.unity
+    path: Assets/CreditS/CreditScenes.unity
     guid: e17954b1850aba049a6acc04812b9234
   - enabled: 0
     path: Assets/Annika/Annikas Scenes/UITesting.unity
@@ -23,4 +23,25 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Annika/Annikas Scenes/OLDTitleScreen.unity
     guid: 6385baaa98cb64046a459deba4f6764f
+  - enabled: 1
+    path: Assets/CreditS/Rafy.unity
+    guid: f8cf1d6db3af23c4085a85cb39d8be16
+  - enabled: 1
+    path: Assets/CreditS/Frank.unity
+    guid: 56da3740f3d24a442ae209893248cbc7
+  - enabled: 1
+    path: Assets/CreditS/Alejandro.unity
+    guid: 0d619d8f816fba94cada4aab0d75a4de
+  - enabled: 1
+    path: Assets/CreditS/Maria.unity
+    guid: 48e9d70f831809b489f2f2c8a3af9f6b
+  - enabled: 1
+    path: Assets/CreditS/Annika.unity
+    guid: 25e60c4d3643c9a45ab100a8b2a4dfae
+  - enabled: 1
+    path: Assets/CreditS/Dylan.unity
+    guid: 60e2197847105994db4b76ad7fc12857
+  - enabled: 1
+    path: Assets/CreditS/Jay.unity
+    guid: 8c07c4813b4df704d9a1ec8f06a16a8d
   m_configObjects: {}
