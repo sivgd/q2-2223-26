@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyDamage : MonoBehaviour
 {
-    public Health playerHealth;
+    public Player playerHealth;
     public int damage = 1;
 
     private void OnCollisionEnter2D(Collision2D collision)

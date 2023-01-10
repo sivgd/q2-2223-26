@@ -15,12 +15,15 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    /* Update is called once per frame
+    //Update is called once per frame
     void Update()
     {
-        if ()
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(1);
+        }
     }
-    */
+    
 
     public void TakeDamage(int damage)
     {
