@@ -16,12 +16,22 @@ public class TraversingScript : MonoBehaviour
     {
         collision.transform.SetParent(transform);
 
-        anim.SetTrigger("go");
-
+        
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         collision.transform.SetParent(null);
     }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+
+        anim.SetTrigger("go");
+
+
+    }
+
+
+
 }
