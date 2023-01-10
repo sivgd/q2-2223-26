@@ -29,6 +29,6 @@ public class HeartController: MonoBehaviour
 
 public enum HeartStatus
 {
-    Empty = 1,
-    Full = 0
+    Empty = 0,
+    Full = 1
 }
