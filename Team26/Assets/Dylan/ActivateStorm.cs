@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ActivateStorm : MonoBehaviour
 {
-
+    public Transform rain;
     public Material cloudZone;
     public Material stormZone;
     
@@ -32,6 +32,7 @@ public class ActivateStorm : MonoBehaviour
     {
         yield return new WaitForSeconds(4);
         RenderSettings.skybox = stormZone;
+        rain.GetComponent<ParticleSystem>();
     }
 
 
