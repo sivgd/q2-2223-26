@@ -6,16 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
-    public static event Action OnPlayerDamaged;
+    //public static event Action OnPlayerDamaged;
     public static event Action OnPlayerDeath;
-
+    
     public int maxHealth = 3;
     public int currentHealth;
 
     //public Animator anim;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         currentHealth = maxHealth;
     }
@@ -24,14 +24,14 @@ public class Health : MonoBehaviour
     {
         //do we wanna add a damage sound effect? add here idk
         currentHealth -= amount;
-        OnPlayerDamaged?.Invoke();
+        //OnPlayerDamaged?.Invoke();
 
         if(currentHealth <= 0)
         {
             currentHealth = 0;
             //DEAD!!!!
             //anim.SetBool("IsDead", true);
-            //SceneManager.LoadScene(0);
+            //SceneManager.LoadScene(0); change this to display gameover menu :D
             Debug.Log("You're Dead :(");
             OnPlayerDeath?.Invoke();
 

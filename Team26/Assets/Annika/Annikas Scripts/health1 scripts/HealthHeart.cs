@@ -9,6 +9,7 @@ public class HealthHeart : MonoBehaviour
     public Health playerHealth;
     List<HeartController> hearts = new List<HeartController>();
 
+    /*
     private void OnEnable()
     {
         Health.OnPlayerDamaged += DrawHearts;
@@ -18,6 +19,7 @@ public class HealthHeart : MonoBehaviour
     {
         Health.OnPlayerDamaged -= DrawHearts;
     }
+    */
 
     private void Start()
     {
@@ -28,15 +30,19 @@ public class HealthHeart : MonoBehaviour
     {
         ClearHearts();
 
-        //float maxHealthRemainder = playerHealth.maxHealth; 
-        int heartsToMake = playerHealth.maxHealth; //(int)((playerHealth.maxHealth / 2) + maxHealthRemainder);
+        //float maxHealthRemainder = playerHealth.maxHealth;
+        //(int)((playerHealth.maxHealth / 2) + maxHealthRemainder);
 
-        for(int i = 0; i < heartsToMake; i++)
+        int heartsToMake = playerHealth.maxHealth; 
+
+        for (int i = 0; i < heartsToMake; i++)
         {
             CreateEmptyHeart();
         }
 
+
         //THIS LOOP SHOULD UPDATE THEM ACCORDINGLY
+
         //looks at amount of hearts
         for(int i = 0; i < hearts.Count; i++)
         {
