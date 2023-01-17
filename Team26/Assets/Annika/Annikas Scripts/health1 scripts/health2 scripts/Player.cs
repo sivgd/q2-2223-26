@@ -1,36 +1,35 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int maxHealth = 3;
-    public int currentHealth;
+    public static event Action OnPlayerDeath;
+    public float health, maxHealth;
 
     public Heart heart;
-    //public EnemyDamage damg;
 
     void Start()
     {
-        currentHealth = maxHealth;
+        health = maxHealth;
     }
-
-    //Update is called once per frame
-    void Update()
+   
+    public void TakeDamage(float amount)
     {
-        
-        
-        if (Input.GetKeyDown(KeyCode.H))
+        health -= amount;
+        if(health <= 0)
         {
-            TakeDamage(1);
+            health = 0;
+            Debug.Log("DEAD");
+            OnPlayerDeath?.Invoke();
         }
-    
-    }
-    
 
-    public void TakeDamage(int damage)
-    {
+        /*
         currentHealth -= damage;
         heart.NumberOfHearts -= damage;
+        */
+    
     }
+    
 }
