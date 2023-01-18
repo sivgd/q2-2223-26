@@ -9,7 +9,7 @@ public class HealthHeart : MonoBehaviour
     public Health playerHealth;
     List<HeartController> hearts = new List<HeartController>();
 
-    /*
+    
     private void OnEnable()
     {
         Health.OnPlayerDamaged += DrawHearts;
@@ -19,7 +19,7 @@ public class HealthHeart : MonoBehaviour
     {
         Health.OnPlayerDamaged -= DrawHearts;
     }
-    */
+    
 
     private void Start()
     {

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
-    //public static event Action OnPlayerDamaged;
+    public static event Action OnPlayerDamaged;
     public static event Action OnPlayerDeath;
     
     public int maxHealth = 3;
@@ -24,7 +24,7 @@ public class Health : MonoBehaviour
     {
         //do we wanna add a damage sound effect? add here idk
         currentHealth -= amount;
-        //OnPlayerDamaged?.Invoke();
+        OnPlayerDamaged?.Invoke();
 
         if(currentHealth <= 0)
         {
