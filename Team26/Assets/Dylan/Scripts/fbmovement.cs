@@ -23,8 +23,8 @@ public class fbmovement : MonoBehaviour
         rb2 = gameObject.GetComponent<Rigidbody2D>();
 
         moveSpeed = 0.1f;
-        jumpForce = 60f;
-        isJumping = false;
+       // jumpForce = 60f;
+        //isJumping = false;
 
 
 

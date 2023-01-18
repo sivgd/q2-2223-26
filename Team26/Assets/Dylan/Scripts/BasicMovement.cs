@@ -18,7 +18,7 @@ public class BasicMovement : MonoBehaviour
     {
         rb2 = gameObject.GetComponent<Rigidbody2D>();
 
-        moveSpeed = 7f;
+        //moveSpeed = 7f;
 
         
     }
