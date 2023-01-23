@@ -61,14 +61,15 @@ public class NewController : MonoBehaviour
         }
 
         if (grounded == true)
-        {
+        {   
+            anim.SetBool("Jump", false);
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 rb2.velocity = new Vector2(rb2.velocity.x, JumpHeight);
                 anim.SetBool("Jump", true);
             }
 
-            anim.SetBool("Jump", false);
+         
         }
 
     }
