@@ -6,7 +6,6 @@ public class ParallaxBackground : MonoBehaviour
 {
     [SerializeField] private float parallaxEffectMultiplier;
 
-    private float length;
     private Transform cameraTransform;
     private Vector3 lastCameraPosition;
 

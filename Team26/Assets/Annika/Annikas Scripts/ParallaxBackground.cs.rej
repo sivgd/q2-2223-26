@@ -1,0 +1,9 @@
+diff a/Team26/Assets/Annika/Annikas Scripts/ParallaxBackground.cs b/Team26/Assets/Annika/Annikas Scripts/ParallaxBackground.cs	(rejected hunks)
+@@ -6,6 +6,7 @@
+ {
+     [SerializeField] private float parallaxEffectMultiplier;
+ 
++    private float length;
+     private Transform cameraTransform;
+     private Vector3 lastCameraPosition;
+ 
