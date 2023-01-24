@@ -49,22 +49,22 @@ public class MovingPlatforms : MonoBehaviour
 
 
 
-        if (grounded == true)
-        {
-          //transform.SetParent(transform);
-          Debug.Log("IT WORKS");
-            player.transform.SetParent(this.transform);
+       // if (grounded == true)
+       // {
+       //   //transform.SetParent(transform);
+       //   Debug.Log("IT WORKS");
+       //     player.transform.SetParent(this.transform);
            
 
           
-       }
+       //}
 
-        if (grounded == false)
-        {
-            transform.SetParent(null);
-        }
+       // if (grounded == false)
+       // {
+       //     player.transform.SetParent(null);
+       // }
 
-        //player.transform.localScale = new Vector3(120, 120, 1);
+       // //player.transform.localScale = new Vector3(120, 120, 1);
 
     }
 
@@ -80,13 +80,13 @@ public class MovingPlatforms : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
 
-//    private void OnCollisionEnter2D(Collision2D collision)
-//    {
-//        collision.transform.SetParent(transform);
-//    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        collision.transform.SetParent(transform);
+    }
 
-//   private void OnCollisionExit2D(Collision2D collision)
-//    {
-//collision.transform.SetParent(null);
-//    }
+  private void OnCollisionExit2D(Collision2D collision)
+    {
+collision.transform.SetParent(null);
+    }
 }

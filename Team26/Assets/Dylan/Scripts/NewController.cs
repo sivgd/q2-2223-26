@@ -27,7 +27,7 @@ public class NewController : MonoBehaviour
     {
     
         //Jumping
-        grounded = Physics2D.BoxCast(transform.position, new Vector2(0.1f, 1.4f), 0, Vector2.down, 1, LayerMask.GetMask("Ground"));
+        grounded = Physics2D.BoxCast(transform.position, new Vector2(0.3f, 1f), 0, Vector2.down, 1, LayerMask.GetMask("Ground"));
 
        
     
@@ -72,8 +72,10 @@ public class NewController : MonoBehaviour
          
         }
 
-        //this.transform.localScale = new Vector3(100 , 10, 10);
-        //Debug.Log(this.transform.lossyScale);
+       if (grounded == false)
+        {
+            anim.SetBool("Walk", false);
+        }
 
     }
 
