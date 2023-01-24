@@ -27,7 +27,7 @@ public class NewController : MonoBehaviour
     {
     
         //Jumping
-        grounded = Physics2D.BoxCast(transform.position, new Vector2(0.3f, 1f), 0, Vector2.down, 1, LayerMask.GetMask("Ground"));
+        grounded = Physics2D.BoxCast(transform.position, new Vector2(0.3f, 1.5f), 0, Vector2.down, 1, LayerMask.GetMask("Ground"));
 
        
     
