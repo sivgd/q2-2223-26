@@ -11,6 +11,7 @@ public class NewController : MonoBehaviour
     private Rigidbody2D rb2;
     private SpriteRenderer sr;
     private Animator anim;
+    public ParticleSystem dust;
 
 
     // Start is called before the first frame update
@@ -27,7 +28,7 @@ public class NewController : MonoBehaviour
     {
     
         //Jumping
-        grounded = Physics2D.BoxCast(transform.position, new Vector2(0.3f, 1.5f), 0, Vector2.down, 1, LayerMask.GetMask("Ground"));
+        grounded = Physics2D.BoxCast(transform.position, new Vector2(0.3f, 0.8f), 0, Vector2.down, 1, LayerMask.GetMask("Ground"));
 
        
     
@@ -40,7 +41,16 @@ public class NewController : MonoBehaviour
             anim.SetBool("Walk", true);
         }
 
-        if (Input.GetKeyUp(KeyCode.D))
+       if (Input.GetKey(KeyCode.D) && grounded == false)
+        {
+            anim.SetBool("Walk", false);
+        }
+
+
+
+
+
+            if (Input.GetKeyUp(KeyCode.D))
         {
             anim.SetBool("Walk", false);
         }
@@ -67,6 +77,7 @@ public class NewController : MonoBehaviour
             {
                 rb2.velocity = new Vector2(rb2.velocity.x, JumpHeight);
                 anim.SetBool("Jump", true);
+               
             }
 
          
@@ -75,11 +86,23 @@ public class NewController : MonoBehaviour
        if (grounded == false)
         {
             anim.SetBool("Walk", false);
+            anim.SetBool("Jump", true);
         }
+
+        if (grounded && Input.GetKeyDown(KeyCode.Space))
+        {
+            CreateDust();
+        }
+
+
+
 
     }
 
-
+    void CreateDust()
+    {
+        dust.Play();
+    }
 
 
 }
