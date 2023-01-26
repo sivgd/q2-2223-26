@@ -33,4 +33,16 @@ public class CircularPlatform : MonoBehaviour
 
         transform.position = new Vector3(x, y) ;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        collision.transform.SetParent(transform);
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        collision.transform.SetParent(null);
+    }
+
+
 }
