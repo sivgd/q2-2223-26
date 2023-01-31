@@ -28,8 +28,8 @@ public class CircularPlatform : MonoBehaviour
     {
         timeCounter += Time.deltaTime * speed;
 
-        float x = 100 + (Mathf.Cos(timeCounter) * width);
-        float y = -2 + (Mathf.Sin(timeCounter) * height);
+        float x = (Mathf.Cos(timeCounter) * width);
+        float y = (Mathf.Sin(timeCounter) * height);
 
         transform.position = new Vector3(x, y) ;
     }
