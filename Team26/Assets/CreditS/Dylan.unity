@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 789717593}
   - component: {fileID: 789717592}
   - component: {fileID: 789717591}
+  - component: {fileID: 789717594}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -206,7 +207,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2003769168
+--- !u!114 &789717594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789717590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3dad8b885b55e743906e46a6ebb25e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1288719519
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -214,23 +227,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2003769170}
-  - component: {fileID: 2003769169}
-  - component: {fileID: 2003769171}
+  - component: {fileID: 1288719521}
+  - component: {fileID: 1288719520}
   m_Layer: 0
-  m_Name: DYLANS_CREDIT_SCENE_png
+  m_Name: Dylans_Edited_Credit_Scene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!212 &2003769169
+--- !u!212 &1288719520
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003769168}
+  m_GameObject: {fileID: 1288719519}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -264,7 +276,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 90aa238c3d75fef41b11df711b2f7443, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 31344ddcd7be2d9479f1106179b52a71, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -275,29 +287,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &2003769170
+--- !u!4 &1288719521
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003769168}
+  m_GameObject: {fileID: 1288719519}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0004, y: 0.0038, z: 0}
-  m_LocalScale: {x: 0.890149, y: 0.90931225, z: 1}
+  m_LocalPosition: {x: -0.1079, y: 0.0031, z: 0}
+  m_LocalScale: {x: 0.94668144, y: 0.9109497, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2003769171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003769168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3dad8b885b55e743906e46a6ebb25e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
