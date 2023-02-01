@@ -5,6 +5,7 @@ using UnityEngine;
 public class ActivateStorm : MonoBehaviour
 {
     public Transform rain;
+   
     public Material cloudZone;
     public Material stormZone;
     
@@ -26,6 +27,8 @@ public class ActivateStorm : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         StartCoroutine(DelayedAction());
+        StartCoroutine(DelayedActionYes());
+
     }
 
     private IEnumerator DelayedAction()
@@ -35,5 +38,10 @@ public class ActivateStorm : MonoBehaviour
         rain.GetComponent<ParticleSystem>();
     }
 
+    private IEnumerator DelayedActionYes()
+    {
+        yield return new WaitForSeconds(34);
+        RenderSettings.skybox = cloudZone;
+    }
 
 }
