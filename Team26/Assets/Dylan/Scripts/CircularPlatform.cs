@@ -10,15 +10,16 @@ public class CircularPlatform : MonoBehaviour
     public float speed;
     public float width;
     public float height;
-    Vector3 origin;
-    
+    [SerializeField]
+    Transform rotationCenter;
+    [SerializeField]
 
 
     // Start is called before the first frame update
     void Start()
     {
 
-        Vector3 origin = transform.position;
+        Vector3 start = this.transform.position;
 
 
     }
@@ -28,10 +29,10 @@ public class CircularPlatform : MonoBehaviour
     {
         timeCounter += Time.deltaTime * speed;
 
-        float x = (Mathf.Cos(timeCounter) * width);
-        float y = (Mathf.Sin(timeCounter) * height);
+        float x = rotationCenter.position.x + (Mathf.Cos(timeCounter) * width);
+        float y = rotationCenter.position.y + (Mathf.Sin(timeCounter) * height);
 
-        transform.position = new Vector3(x, y) ;
+        transform.position = new Vector3(x, y);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

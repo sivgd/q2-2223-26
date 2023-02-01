@@ -17,7 +17,7 @@ public class MovingPlatforms : MonoBehaviour
     void Start()
     {
        
-        Debug.Log(patrolPath);
+
         patrolPoints = patrolPts.ToArray();
         nPoints = patrolPoints.Length;
         player = GameObject.Find("Player");
