@@ -26,32 +26,6 @@ public class Heart : MonoBehaviour
         {
             hearts[i].sprite = fullHeart;
         }
-        /*
-        for (int i = 0; i < hearts.Length; i++)
-        {
-            if (health > NumberOfHearts)
-            {
-                health = NumberOfHearts;
-            }
-
-            if (i < health)
-            {
-                hearts[i].sprite = fullHeart;
-            }
-            else
-            {
-                hearts[i].sprite = emptyHeart;
-            }
-
-            if (i < NumberOfHearts)
-            {
-                hearts[i].enabled = true;
-            }
-            else
-            {
-                hearts[i].enabled = false;
-            }
-        }
-        */
+        
     }
 }

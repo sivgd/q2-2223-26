@@ -6,13 +6,23 @@ public class NewController : MonoBehaviour
 {
     public float MovementSpeed;
     public float JumpHeight;
-   
     public bool grounded = false;
     private Rigidbody2D rb2;
     private SpriteRenderer sr;
     private Animator anim;
     public ParticleSystem dust;
 
+    public Player playerHealth;
+
+    private void OnEnable()
+    {
+        Player.OnPlayerDeath += DisablePlayerMovement;
+    }
+
+    private void OnDisable()
+    {
+        Player.OnPlayerDeath -= DisablePlayerMovement;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +31,8 @@ public class NewController : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         anim.SetBool("Jump", false);
+
+        EnablePlayerMovement();
     }
 
     // Update is called once per frame
@@ -93,10 +105,19 @@ public class NewController : MonoBehaviour
         {
             CreateDust();
         }
+        
+    }
 
+    private void DisablePlayerMovement()
+    {
+        anim.enabled = false;
+        rb2.bodyType = RigidbodyType2D.Static;
+    }
 
-
-
+    private void EnablePlayerMovement()
+    {
+        anim.enabled = true;
+        rb2.bodyType = RigidbodyType2D.Dynamic;
     }
 
     void CreateDust()
