@@ -10,37 +10,6 @@ public class ResetPosition : MonoBehaviour
 
     
 
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Heart.health--;
-            if (Heart.health <= 0)
-            {
-                //AudioManager.isGameOver = true;
-            }
-            else
-            {
-                StartCoroutine(GetHurt());
-            }
-            collision.gameObject.GetComponent<Player>().TakeDamage(1);
-
-
-
-
-        }
-
-        IEnumerator GetHurt()
-        {
-            Physics2D.IgnoreLayerCollision(6, 8);
-            yield return new WaitForSeconds(2);
-            Physics2D.IgnoreLayerCollision(6, 8, false);
-        }
-
-
-
-
-    }
 private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
@@ -49,4 +18,5 @@ private void OnTriggerEnter2D(Collider2D collision)
             mainPlayer.transform.localPosition = spawnpoint.transform.localPosition;
         }
     }
+
 }
