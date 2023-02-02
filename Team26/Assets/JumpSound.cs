@@ -6,6 +6,7 @@ public class JumpSound : MonoBehaviour
 {
 
     public AudioSource jump;
+    public AudioSource move;
 
     // Start is called before the first frame update
     void Start()
@@ -22,5 +23,10 @@ public class JumpSound : MonoBehaviour
     void Jumpsound()
     {
         jump.Play();
+    }
+
+    void MoveSound()
+    {
+        move.Play();
     }
 }
