@@ -7,13 +7,13 @@ public class ResetTraverse : MonoBehaviour
     public GameObject spawnpoint;
     public GameObject mainPlayer;
     private Rigidbody2D rb2;
-    public Animator anim;
+    //public Animator anim;
     public Material cloudZone;
 
     void Start()
     {
         
-        anim = gameObject.GetComponent<Animator>();
+        //anim = gameObject.GetComponent<Animator>();
     }
 
     //private void OnCollisionEnter2D(Collision2D collision)
@@ -35,14 +35,13 @@ public class ResetTraverse : MonoBehaviour
 
 
 
-        if (collision.tag == "Player")
-        {
+       
             rb2 = mainPlayer.GetComponent<Rigidbody2D>();
             mainPlayer.transform.localPosition = spawnpoint.transform.localPosition;
             Debug.Log("Hello");
-            anim.SetBool("go", false);
+            //anim.SetBool("go", false);
             RenderSettings.skybox = cloudZone;
-        }
+       
         
     }
 }
