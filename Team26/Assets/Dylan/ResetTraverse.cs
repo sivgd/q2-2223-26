@@ -20,7 +20,7 @@ public class ResetTraverse : MonoBehaviour
     {
        
      RenderSettings.skybox = cloudZone;
-        
+     anim.SetBool("go", false);
         if (collision.gameObject.CompareTag("Player"))
         {
             Heart.health = Heart.health - 1;
@@ -37,7 +37,7 @@ public class ResetTraverse : MonoBehaviour
         rb2 = mainPlayer.GetComponent<Rigidbody2D>();
             mainPlayer.transform.localPosition = spawnpoint.transform.localPosition;
             Debug.Log("Hello");
-            anim.SetBool("go", false);
+           
 
 
     }

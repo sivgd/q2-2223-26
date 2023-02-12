@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NewController : MonoBehaviour
 {
+    
     public float MovementSpeed;
     public float JumpHeight;
     public bool grounded = false;
