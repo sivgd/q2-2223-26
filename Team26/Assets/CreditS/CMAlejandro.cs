@@ -15,10 +15,17 @@ public class CMAlejandro : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
 
             SceneManager.LoadScene("Dylan"); //Requires "Using" (see above)
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+
+            SceneManager.LoadScene("Maria"); //Requires "Using" (see above)
 
         }
     }

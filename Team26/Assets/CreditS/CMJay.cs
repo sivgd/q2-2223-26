@@ -14,11 +14,17 @@ public class CMJay : MonoBehaviour
     void Update()
     {
 
-
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
 
             SceneManager.LoadScene("TitleScene"); //Requires "Using" (see above)
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+
+            SceneManager.LoadScene("Annika"); //Requires "Using" (see above)
 
         }
     }

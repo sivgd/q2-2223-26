@@ -15,10 +15,17 @@ public class CMDylan : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
 
             SceneManager.LoadScene("Annika"); //Requires "Using" (see above)
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+
+            SceneManager.LoadScene("Alejandro"); //Requires "Using" (see above)
 
         }
     }

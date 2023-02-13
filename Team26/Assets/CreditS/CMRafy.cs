@@ -15,11 +15,22 @@ public class CMRafy : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
 
             SceneManager.LoadScene("Frank"); //Requires "Using" (see above)
 
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+
+            SceneManager.LoadScene("TitleScene"); //Requires "Using" (see above)
+
+        }
+
+
+
+
     }
 }

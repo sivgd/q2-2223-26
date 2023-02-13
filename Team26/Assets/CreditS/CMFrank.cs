@@ -15,10 +15,17 @@ public class CMFrank : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
 
             SceneManager.LoadScene("Maria"); //Requires "Using" (see above)
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+
+            SceneManager.LoadScene("Rafy"); //Requires "Using" (see above)
 
         }
     }

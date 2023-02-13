@@ -15,10 +15,17 @@ public class CMAnnika : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
 
             SceneManager.LoadScene("Jay"); //Requires "Using" (see above)
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+
+            SceneManager.LoadScene("Dylan"); //Requires "Using" (see above)
 
         }
     }
